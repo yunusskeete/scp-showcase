@@ -13,7 +13,10 @@ An agent can observe live state, answer natural language queries, and operate bu
 > **Key principle:** The spatial model is the only thing that changes between buildings. Author a model for a new location and the same agent is immediately deployable there — no additional infrastructure required.
 
 ![Interactive 3D model of a 13-room multi-functional building used as demonstration.](assets/SPINTEL-demo_building-ezgif.com-optimize.gif)
-<figcaption>Fig. 1 — Interactive 3D model of a 13-room multi-functional building used as demonstration. Generated from scratch using a single text prompt with <a href="https://spintel.spatial-intelligence.co.uk/" target="_blank" rel="noopener noreferrer">Spintel</a> — a text → 3D scene generation pipeline from <a href="https://spatial-intelligence.co.uk/" target="_blank" rel="noopener noreferrer">Spatial Intelligence</a>.</figcaption><br>
+<figcaption>Fig. 1 — Interactive 3D model of a 13-room multi-functional building used as demonstration. Generated from scratch using a single text prompt with <a href="https://spintel.spatial-intelligence.co.uk/" target="_blank" rel="noopener noreferrer">Spintel</a> — a text → 3D scene generation pipeline from <a href="https://spatial-intelligence.co.uk/" target="_blank" rel="noopener noreferrer">Spatial Intelligence</a>.</figcaption>
+
+<br>
+<br>
 
 ## Examples
 
@@ -26,9 +29,12 @@ Three examples using the 13-room building shown above, each demonstrating a dist
 > **Response:** *"From the entrance lobby, walk north through the opening in the north wall and follow the corridor to the main junction. At the junction, take the third doorway from the south — between the orange noticeboard and the kitchen door — into the changing room. Total distance: 13.9 m."*
 
 ![Visualisation of the AI agent's recommended route.](assets/SCP-navigation-with-landmarks-ezgif.com-optimize.gif)
-<figcaption>Fig. 2 — The yellow route line traces the entrance → junction → changing room path provided by the AI agent. Yellow arrows mark the three landmarks referenced in the agent's directions: the orange noticeboard, the kitchen door, and the changing room entrance.</figcaption><br>
+<figcaption>Fig. 2 — The yellow route line traces the entrance → junction → changing room path provided by the AI agent. Yellow arrows mark the three landmarks referenced in the agent's directions: the orange noticeboard, the kitchen door, and the changing room entrance.</figcaption>
 
-The agent traverses the building as a human would, identifies the two-hop route, and produces turn-by-turn directions with named landmarks. No pre-computed routes — real-time traversal of the spatial model underpins the system, enabling deployment across multiple venues.
+<br>
+<br>
+
+***The agent traverses the building as a human would, identifies the two-hop route, and produces turn-by-turn directions with named landmarks. No pre-computed routes — real-time traversal of the spatial model underpins the system, enabling deployment across multiple venues.***
 
 <br>
 
@@ -43,9 +49,12 @@ The agent traverses the building as a human would, identifies the two-hop route,
 > **Response:** *"You are in the **Changing Room** — identified from the grey metal lockers lining the north and south walls and the benches running down the centre. Exit route: east → corridor junction → south → entrance lobby. ~14 m."*
 
 ![Visualisation of location being identified by the AI agent based on description.](assets/SCP-location_identification.gif)
-<figcaption>Fig. 3 — The changing room, identified by the agent by matching the natural language description alone against its lightweight spatial model.</figcaption><br>
+<figcaption>Fig. 3 — The changing room, identified by the agent by matching the natural language description alone against its lightweight spatial model.</figcaption>
 
-The agent matches a natural language description against its spatial model, identifies the room without being told where the user is, and offers directions to the exit. The same mechanism handles intent-based queries: "where can I find somewhere quiet to work?"
+<br>
+<br>
+
+***The agent matches a natural language description against its spatial model, identifies the room without being told where the user is, and offers directions to the exit. The same mechanism handles intent-based queries: "where can I find somewhere quiet to work?"***
 
 <br>
 
@@ -62,9 +71,12 @@ The agent matches a natural language description against its spatial model, iden
 > *Lights activated: entrance lobby → corridor → briefing room → lounge."*
 
 ![Visualisation of live building control (light control) during navigation.](assets/SCP-building_control.gif)
-<figcaption>Fig. 4 — The agent traverses the building in real time to find a path to the lounge, activating lights room-by-room as it plans the route.</figcaption><br>
+<figcaption>Fig. 4 — The agent traverses the building in real time to find a path to the lounge, activating lights room-by-room as it plans the route.</figcaption>
 
-The agent traverses the building in real-time, reasoning step-by-step about live state. It interacts with the building control layer to activate lights as it passes through rooms. Live state and system control flow through the same underlying spatial model.
+<br>
+<br>
+
+***The agent traverses the building in real-time, reasoning step-by-step about live state. It interacts with the building control layer to activate lights as it passes through rooms. Live state and system control flow through the same underlying spatial model.***
 
 <br>
 
